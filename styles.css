@@ -134,6 +134,10 @@ footer {
     width: 100%;
   }
 
+    #mode-button:hover{
+    background-color: initial;
+  }
+
 
 
 }
