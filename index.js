@@ -92,3 +92,20 @@ function buttonAnimtion(currentKey){
     }, 100);    
 
 }
+
+$(".dark-mode").click(function(){
+    if ($("body").hasClass("dark")) {
+        // Switch to light mode
+        $("body").removeClass("dark").css("background-image", "url('./images/bg2.png')");
+        $("h1").css("color", "black");
+        $(".drum").css("color", "#DA0463");
+        $(".drum").css("text-shadow", "8px 0 black");
+    } else {
+        // Switch to dark mode
+        $("body").addClass("dark").css("background-image", "url('./images/bginverted.png')");
+        $("h1").css("color", "white");
+        $(".drum").css("color", "white");
+        $(".drum").css("text-shadow", "8px 0 #DA0463");
+    }
+});
+

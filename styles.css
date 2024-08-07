@@ -1,12 +1,36 @@
 body {
   text-align: center;
-  background-color: rgb(39, 39, 39);
+  background-color: rgb(255, 255, 255);
+  background-image: url(./images/bg2.png);
+  background-size: cover;
+  background-position: 100vh;
+  background-position-y: 0px;
+}
+
+#mode-button{
+  height: 40px;
+  display: flex;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 500;
+  font-size: 16pt;
+  width: 70px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 3px 1px #DA0463;
+  border: 3px solid #DA0463;
+  border-radius: 6px;
+}
+
+#mode-button:hover{
+  background-color: rgb(27, 27, 27);
 }
 
 h1 {
   text-transform: uppercase;
   font-size: 5rem;
-  color: #DBEDF3;
+  color: black;
   font-family: "Arvo", cursive;
   text-shadow: 6px 0 #DA0463;
 
@@ -65,34 +89,44 @@ footer {
 
 .drum {
   outline: none;
-  border: 10px solid #000000;
+  border: 8px solid #000000;
   font-size: 5rem;
   font-family: 'Arvo', cursive;
   line-height: 2;
   font-weight: 900;
   color: #DA0463;
-  text-shadow: 3px 0 #DBEDF3;
-  border-radius: 15px;
-  display: inline-flex;
+  text-shadow: 8px 0 #000000;
+  border-radius: 10px;
+  display: inline-block;
   text-transform: uppercase;
   width: 150px;
   height: 150px;
   text-align: center;
-  margin: 20px;
+  margin: -20px 20px;
   background-color: white;
 }
 
-@media (max-width:786px){
+@media (max-width:1500px){
+
+  body{
+    background-position: 100%;
+  }
 
   h1{
     font-size: 32pt;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
   
   }
 
   .drum{
-    margin: 25px 25px auto;
+    display: inline-flex;
+    margin: 15px 15px auto;
     font-size: 0px;
+    width: 120px;
+    height: 120px;
+    border: 7px solid black;
+    border-radius: 8px;
+    box-shadow: 3px 2px 0 white;
   }
 
   .set {
